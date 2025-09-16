@@ -1,0 +1,227 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Digital Bank.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Digital Bank.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIGITALBANK_DIALOG DIALOGEX 0, 0, 345, 159
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Visual C++ Digital Bank Example"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Connection",IDC_STATIC,8,5,102,146
+    GROUPBOX        "Digital Bank Read Area",IDC_STATIC,118,5,219,71
+    GROUPBOX        "Digital Bank Write Area",IDC_STATIC,118,82,219,69
+    LTEXT           "IP Address of SNAP I/O:",IDC_STATIC,16,18,84,8
+    LTEXT           "Port Number:",IDC_STATIC,16,46,69,8
+    LTEXT           "Status:",IDC_STATIC,16,98,47,8
+    EDITTEXT        IDC_IP_ADDRESS_EDIT,16,27,84,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PORT_EDIT,16,55,84,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Connect",IDC_CONNECT_BTN,16,76,39,14
+    PUSHBUTTON      "Disconnect",IDC_DISCONNECT_BTN,57,76,43,14
+    EDITTEXT        IDC_STATUS_EDIT,16,107,84,34,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Point states:",IDC_STATIC,127,19,43,8
+    EDITTEXT        IDC_READ_STATES_EDIT,181,18,116,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "On-latch states:",IDC_STATIC,127,36,52,8
+    EDITTEXT        IDC_ONLATCH_STATES_EDIT,181,34,116,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Off-latch states:",IDC_STATIC,127,52,51,8
+    EDITTEXT        IDC_OFFLATCH_STATES_EDIT,181,50,116,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "Clear",IDC_CLEAR_ON_LATCH_BTN,301,34,27,12
+    PUSHBUTTON      "Clear",IDC_CLEAR_OFF_LATCH_BTN,301,50,27,12
+    LTEXT           "Turn on mask:",IDC_STATIC,125,97,51,8
+    EDITTEXT        IDC_WRITE_ON_EDIT,179,96,116,12,ES_AUTOHSCROLL
+    LTEXT           "Turn off mask:",IDC_STATIC,125,114,52,8
+    EDITTEXT        IDC_WRITE_OFF_EDIT,179,112,116,12,ES_AUTOHSCROLL
+    LTEXT           "Set state mask:",IDC_STATIC,125,130,51,8
+    EDITTEXT        IDC_WRITE_STATES_EDIT,179,128,116,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Write",IDC_WRITE_OFF_BTN,299,112,27,12
+    PUSHBUTTON      "Write",IDC_WRITE_STATES_BTN,299,128,27,12
+    PUSHBUTTON      "Write",IDC_WRITE_ON_BTN,299,96,27,12
+END
+
+IDD_CANCEL_OPEN DIALOG DISCARDABLE  0, 0, 161, 66
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "SNAP I/O"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,56,44,50,14
+    LTEXT           "Attempting to open SNAP I/O unit.",IDC_STATIC,8,8,145,8
+    LTEXT           "Press Cancel to cancel the operation.",IDC_STATIC,8,24,
+                    133,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,1,0
+ PRODUCTVERSION 1,0,1,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Opto 22\0"
+            VALUE "FileDescription", "Digital Bank MFC Application\0"
+            VALUE "FileVersion", "1, 0, 1, 0\0"
+            VALUE "InternalName", "Digital Bank\0"
+            VALUE "LegalCopyright", "Copyright (C) 1999\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Digital Bank.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Visual C++ Digital Bank Example using O22SnapIoMemMap C++ class\0"
+            VALUE "ProductVersion", "1, 0, 1, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIGITALBANK_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 337
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_CANCEL_OPEN, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 153
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 58
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Digital Bank.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

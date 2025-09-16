@@ -1,0 +1,22 @@
+
+
+
+
+
+ 0x200 vote_strobe_port for strobe 16-23 value = ~(1 << (vote_strobe % 8)) or 0xFF to reset
+ 0x201 vote_module  value = (0 - 3) | ?? (0x14 for get)
+ 0x202 vote_in  value = ??
+       vote_out value = ??
+ 0x203 
+ 0x204 
+ 0x205 
+ 0x206 
+ 0x207 
+ 0x208 
+ 0x209 
+ 0x20A 
+ 0x20B 
+ 0x20C 
+ 0x20D 
+ 0x20E vote_strobe_port for strobe 0-7  value = ~(1 << (vote_strobe % 8)) or 0xFF to reset
+ 0x20F vote_strobe_port for strobe 8-15 value = ~(1 << (vote_strobe % 8)) or 0xFF to reset

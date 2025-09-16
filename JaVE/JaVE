@@ -1,0 +1,34 @@
+$BUFFER_STATE$
+# PREDITOR - Buffer State Information\\tWed Aug 25 21:27:04 1999
+BUFFER "D:\user\c\javote\JaVM\VMThread.cpp", 8456, "VMThread.cpp", 1495, 95, "5 9", 0, "\r\n", 0, 0
+BUFFER "E:\house_javote\Votes\h833433.vot", 8, "h833433.vot", 1, 142, "9 17", 0, "\r\n", 0, 0
+BUFFER "D:\user\c\javote\JaVE\VEThread.cpp", 8456, "VEThread.cpp", 96, 38, "5 9", 0, "\r\n", 0, 0
+
+
+$WINDOW_STATE$
+toggle_toolbar 1
+SET_MDI 1, 0, 0
+# PREDITOR - State Information\\tWed Aug 25 21:27:04 1999
+set_startup_dir D:\user\c\javote\JaVE\
+WINDOW 7, -22, 1190, 825, 1150945, "", "%06d%v", "VMThread.cpp", 1458, 0
+WIN_VISIBLES "", " ", "", "", "", " "
+WIN_COLORS 0, 16777215, 0, 16777215, 16711680, 0, 0, 16777215
+WIN_CONTEXT 0, 0, 0, 0, 10, 2, 1
+load_font "window_1" "Fonts"
+EDITOR 4, -2, 46, 1205, 917
+
+
+$PROJECT_SETTINGS$
+D:\user\c\javote\JaVE [None] 1
+$PROJECT_COMPILE$
+[None]
+[None]
+$PROJECT_DEBUG$
+[None]
+[None]
+[None]
+$PROJECT_MAKE$
+[None]
+[None]
+[None]
+[None]

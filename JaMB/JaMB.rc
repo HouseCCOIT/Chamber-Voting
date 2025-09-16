@@ -1,0 +1,316 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\JaMB.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\MNSeal.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG 0, 0, 217, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About JaMB"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "JaMB Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 1998",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,32,14,WS_GROUP
+END
+
+IDD_JAMB_DIALOG DIALOGEX 0, 0, 617, 262
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | DS_CENTERMOUSE | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_STATICEDGE | WS_EX_APPWINDOW
+CAPTION "Message Board"
+FONT 10, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_MB_ORDER_OF_BUSINESS,210,33,131,199,CBS_DROPDOWNLIST | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_MB_FILES_RESOLUTIONS,210,59,78,131,CBS_DROPDOWNLIST | WS_TABSTOP,WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_MB_NUMBER,292,59,37,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_MB_ACTIONS,210,85,131,171,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_MB_EDIT1,19,20,185,13,ES_CENTER | ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_MB_EDIT2,19,33,185,13,ES_CENTER | ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_MB_EDIT3,19,46,185,13,ES_CENTER | ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_MB_EDIT4,19,59,185,13,ES_CENTER | ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_MB_EDIT5,19,72,185,13,ES_CENTER | ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_MB_EDIT6,19,85,185,13,ES_CENTER | ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_MB_EDIT7,19,98,185,13,ES_CENTER | ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_MB_EDIT8,19,111,185,13,ES_CENTER | ES_AUTOHSCROLL | NOT WS_BORDER
+    PUSHBUTTON      "Transmit Display",IDC_BUTTON_TRANSMIT_DISPLAY,18,208,65,20
+    PUSHBUTTON      "Clear Display Entry",IDC_BUTTON_CLEAR,90,208,65,20
+    PUSHBUTTON      "Clear Remotes",IDC_BUTTON_CLEAR_REMOTES,162,208,65,20
+    CONTROL         "Consent Calendar",IDC_CHECK_CONSENT_CALENDAR,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,36,202,76,12
+    CONTROL         "Calendar For The Day",IDC_CHECK_CALENDAR,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,36,220,76,12
+    LISTBOX         IDC_LOCK_LIST,373,35,58,157,LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Summary",IDC_RADIO_LOCK_SUMMARY,"Button",BS_AUTORADIOBUTTON | WS_GROUP,373,209,45,10
+    CONTROL         "Complete",IDC_RADIO_LOCK_FULL,"Button",BS_AUTORADIOBUTTON,373,196,45,10
+    COMBOBOX        IDC_COMBO_MB_CONSENT_CALENDAR,117,202,87,94,CBS_DROPDOWNLIST | NOT WS_VISIBLE | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_MB_CALENDAR,117,220,87,94,CBS_DROPDOWNLIST | NOT WS_VISIBLE | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Add to Queue",IDC_BUTTON_ADD_CONSENT_CALENDAR,219,202,54,12,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "&Add to Queue",IDC_BUTTON_ADD_CALENDAR,219,220,54,12,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "EXIT",IDCANCEL,559,245,58,16
+    CONTROL         "Display 1",IDC_RADIO_MB_DISPLAY1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,18,126,40,16
+    CONTROL         "Display 2",IDC_RADIO_MB_DISPLAY2,"Button",BS_AUTORADIOBUTTON,78,126,40,16
+    LTEXT           "Order of Business:",IDC_STATIC_MB_ORDER_OF_BUSINESS_LABEL,210,20,56,12,SS_CENTERIMAGE
+    LTEXT           "Files/Resolutions:",IDC_STATIC_MB_FILES_RESOLUTIONS_LABEL,210,46,55,12,SS_CENTERIMAGE
+    LTEXT           "Actions:",IDC_STATIC_MB_ACTIONS_LABEL,210,72,58,12,SS_CENTERIMAGE
+    LTEXT           "Number",IDC_STATIC_NUMBER,292,46,32,12,SS_CENTERIMAGE
+    CONTROL         "Spin1",IDC_SPIN_MB_NUMBER,"msctls_updown32",UDS_ALIGNLEFT | UDS_ARROWKEYS,331,56,10,19
+    GROUPBOX        "Display One",IDC_STATIC_DISPLAY,12,9,337,233
+    GROUPBOX        "Queues",IDC_STATIC,11,191,333,51,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Clear",IDC_BUTTON_CLEAR_CONSENT_CALENDAR,280,202,26,12,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Clear",IDC_BUTTON_CLEAR_CALENDAR,280,220,26,12,NOT WS_VISIBLE | WS_DISABLED
+    GROUPBOX        "Station Locks",IDC_STATIC_LOCK_FRAME2,363,12,77,230
+    PUSHBUTTON      "OK",IDOK,485,245,58,16,NOT WS_VISIBLE | WS_DISABLED
+    COMBOBOX        IDC_COMBO_MB_FONT,210,110,77,72,CBS_DROPDOWNLIST | CBS_SORT | WS_TABSTOP
+    LTEXT           "Font:",IDC_STATIC_MB_FONT,210,100,37,8
+    COMBOBOX        IDC_COMBO_MB_FONTSIZE,292,110,49,46,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "Size:",IDC_STATIC_MB_FONTSIZE,292,100,16,8
+    COMBOBOX        IDC_COMBO_MB_WATERMARK,241,213,95,72,CBS_DROPDOWNLIST | CBS_SORT | WS_TABSTOP
+    LTEXT           "WaterMark",IDC_STATIC_MB_WATERMARK,241,203,34,8
+    PUSHBUTTON      "Print Locks",IDC_BUTTON_PRINT_LOCKS,382,224,41,12
+    CONTROL         "No Web",IDC_CHECK_NO_WEB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,165,126,39,16
+    LISTBOX         IDC_REMOTE_LIST,455,35,58,157,LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Summary",IDC_RADIO_REMOTE_SUMMARY,"Button",BS_AUTORADIOBUTTON | WS_GROUP,455,210,45,10
+    CONTROL         "Complete",IDC_RADIO_REMOTE_FULL,"Button",BS_AUTORADIOBUTTON,455,197,45,10
+    GROUPBOX        "Remote Votes",IDC_STATIC_REMOTE_FRAME,445,12,77,230
+    PUSHBUTTON      "Print Remotes",IDC_BUTTON_PRINT_REMOTES,460,225,47,12
+    LISTBOX         IDC_CALLIN_LIST,537,35,58,157,LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Summary",IDC_RADIO_CALLIN_SUMMARY,"Button",BS_AUTORADIOBUTTON | WS_GROUP,537,211,45,10
+    CONTROL         "Complete",IDC_RADIO_CALLIN_FULL,"Button",BS_AUTORADIOBUTTON,537,198,45,10
+    GROUPBOX        "Call In Votes",IDC_STATIC_CALLIN_FRAME,527,12,77,230
+    PUSHBUTTON      "Print Call Ins",IDC_BUTTON_PRINT_CALLINS,542,226,47,12
+    CONTROL         "Select All",IDC_CHECK_LOCKS_ALL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,373,23,44,10
+    CONTROL         "Select All",IDC_CHECK_REMOTES_ALL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,455,23,44,10
+    CONTROL         "Select All",IDC_CHECK_CALLINS_ALL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,537,23,44,10
+END
+
+IDD_JADISPLAY_DIALOG DIALOGEX 1601, 0, 259, 190
+STYLE DS_SETFONT | DS_SETFOREGROUND | WS_POPUP | WS_DISABLED
+EXSTYLE WS_EX_TRANSPARENT
+FONT 8, "Lucida Console", 0, 0, 0x1
+BEGIN
+    CTEXT           "1",IDC_JD_STATIC1,0,0,257,23,0,WS_EX_TRANSPARENT
+    CTEXT           "2",IDC_JD_STATIC2,0,23,257,23,0,WS_EX_TRANSPARENT
+    CTEXT           "3",IDC_JD_STATIC3,0,46,257,23,0,WS_EX_TRANSPARENT
+    CTEXT           "4",IDC_JD_STATIC4,0,69,257,23,0,WS_EX_TRANSPARENT
+    CTEXT           "5",IDC_JD_STATIC5,0,92,257,23,0,WS_EX_TRANSPARENT
+    CTEXT           "6",IDC_JD_STATIC6,0,115,257,23,0,WS_EX_TRANSPARENT
+    CTEXT           "7",IDC_JD_STATIC7,0,138,257,23,0,WS_EX_TRANSPARENT
+    CTEXT           " ",IDC_JD_STATIC8,0,167,257,23,0,WS_EX_TRANSPARENT
+    CTEXT           "9",IDC_JD_STATIC9,0,167,64,23,0,WS_EX_TRANSPARENT
+    CTEXT           "10",IDC_JD_STATIC10,64,167,64,23,0,WS_EX_TRANSPARENT
+    CTEXT           "11",IDC_JD_STATIC11,128,167,64,23,0,WS_EX_TRANSPARENT | WS_EX_RIGHT
+    CTEXT           "12",IDC_JD_STATIC12,192,167,64,23,0,WS_EX_TRANSPARENT | WS_EX_RIGHT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "JaMB MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "JaMB"
+            VALUE "LegalCopyright", "Copyright (C) 1998"
+            VALUE "OriginalFilename", "JaMB.EXE"
+            VALUE "ProductName", "JaMB Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_JAMB_DIALOG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 260
+    END
+
+    IDD_JADISPLAY_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 257
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_JAMB_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_MB_FONTSIZE, 0x403, 6, 0
+0x6d53, 0x6c61, 0x006c, 
+    IDC_COMBO_MB_FONTSIZE, 0x403, 7, 0
+0x654d, 0x6964, 0x6d75, "\000" 
+    IDC_COMBO_MB_FONTSIZE, 0x403, 6, 0
+0x614c, 0x6772, 0x0065, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "res\\bitmap1.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_JADISPLAY_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_JAMB_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "&About JaMB..."
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\JaMB.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C16F9E05-6639-4597-B355-E92F9267F838}</ProjectGuid>
+    <Keyword>ManagedCProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <EnableManagedIncrementalBuild>true</EnableManagedIncrementalBuild>
+    <CodeAnalysisRuleSet>C:\Program Files (x86)\Microsoft Visual Studio 14.0\Team Tools\Static Analysis Tools\Rule Sets\MixedRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\JaInc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <CompileAsManaged>true</CompileAsManaged>
+      <AdditionalOptions>/D _AFXDLL</AdditionalOptions>
+      <EnablePREfast>false</EnablePREfast>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\JaInc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="RemoteSocketClient.cpp" />
+    <ClCompile Include="JaOpto.cpp" />
+    <ClCompile Include="JaStatic.cpp" />
+    <ClCompile Include="JaVM.cpp" />
+    <ClCompile Include="JaVMDlg.cpp" />
+    <ClCompile Include="MBSocketClient.cpp" />
+    <ClCompile Include="MBSocketServer.cpp" />
+    <ClCompile Include="RemoteSocketServer.cpp" />
+    <ClCompile Include="SockThread.cpp" />
+    <ClCompile Include="StdAfx.cpp" />
+    <ClCompile Include="trace.cpp" />
+    <ClCompile Include="VideoSocketClient.cpp" />
+    <ClCompile Include="VideoSocketServer.cpp" />
+    <ClCompile Include="VMSocketClient.cpp" />
+    <ClCompile Include="VMSocketServer.cpp" />
+    <ClCompile Include="VMThread.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\JaInc\MB_Sock.h" />
+    <ClInclude Include="..\JaInc\Video_Sock.h" />
+    <ClInclude Include="..\JaInc\VM_Sock.h" />
+    <ClInclude Include="RemoteSocketClient.h" />
+    <ClInclude Include="JaOpto.h" />
+    <ClInclude Include="JaStatic.h" />
+    <ClInclude Include="JaVM.h" />
+    <ClInclude Include="JaVMDlg.h" />
+    <ClInclude Include="MBSocketClient.h" />
+    <ClInclude Include="MBSocketServer.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SERVER32.H" />
+    <ClInclude Include="RemoteSocketServer.h" />
+    <ClInclude Include="SockThread.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="VideoSocketClient.h" />
+    <ClInclude Include="VideoSocketServer.h" />
+    <ClInclude Include="VMSocketClient.h" />
+    <ClInclude Include="VMSocketServer.h" />
+    <ClInclude Include="VMThread.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="JaVM.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\JaVM.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="mnhouse7.bmp" />
+    <Image Include="res\GreenSmall.bmp" />
+    <Image Include="res\JaVM.ico" />
+    <Image Include="res\RedSmall.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="OptoMMP4">
+      <HintPath>..\..\Program Files\Opto22\PAC-DEV-OPTOMMP-DOTNET\Development\AnyCPU_DotNet_4\OptoMMP4.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="JaVM.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
