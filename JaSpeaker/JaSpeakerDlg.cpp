@@ -170,8 +170,11 @@ BOOL CJaSpeakerDlg::OnInitDialog()
          }
       }
       else {
-         m_MemberSeat[68].SetName("Sergeant");
-         m_MemberSeat[68].SetCounty("at Arms");
+         //m_MemberSeat[68].SetName("Sergeant");
+         //m_MemberSeat[68].SetCounty("at Arms");
+         // In honor of Melissa Hortman's legacy
+         m_MemberSeat[68].SetName("HORTMAN");
+         m_MemberSeat[68].SetCounty("Hennepin");
       }
       m_MemberSeat[i].SetBackColor(RGB(200, 200, 200));
       //m_MemberSeat[i].SetTextColor(RGB(128, 128, 128));

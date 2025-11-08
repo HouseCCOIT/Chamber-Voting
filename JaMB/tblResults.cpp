@@ -33,7 +33,8 @@ CtblResults::CtblResults(CDatabase* pdb)
 CString CtblResults::GetDefaultConnect()
 {
 	//return _T("DSN=House1;Description=House Chamber;Trusted_Connection=Yes;APP=Microsoft\x00ae Visual Studio\x00ae 2015;WSID=ROSSUM;DATABASE=House1;");
-   return _T("DSN=House1;Description=House Chamber;UID=DisplayU;PWD=ChamberUpdate1!.;APP=Microsoft\x00ae Visual Studio\x00ae 2015;WSID=156.98.78.174\House;DATABASE=House1;");
+   //return _T("DSN=House1;Description=House Chamber;UID=DisplayU;PWD=ChamberUpdate1!.;APP=Microsoft\x00ae Visual Studio\x00ae 2015;WSID=156.98.78.174\House;DATABASE=House1;");
+	return _T("DSN=House1;Description=House Chamber;UID=DisplayU;PWD=fritz042216!;APP=Microsoft\x00ae Visual Studio\x00ae 2015;WSID=156.98.78.175;DATABASE=House1;");
 }
 
 CString CtblResults::GetDefaultSQL()
